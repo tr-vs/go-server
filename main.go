@@ -20,7 +20,7 @@ func main() {
 	router.POST("/echo", postEcho)
 	router.GET("/echo", getEcho)
 
-    router.Run("localhost:8085")
+    router.Run(":8085")
 }
 
 func getEcho(c *gin.Context) {
